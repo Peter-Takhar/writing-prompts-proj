@@ -92,13 +92,19 @@ body {
 .shuffle-btn {
   padding: 0.75rem 2rem;
   font-size: 1rem;
-  background-color: #282c34;
-  color: white;
-  border: none;
-  border-radius: 6px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #1e1e2e 0%, #2d2b55 100%);
+  color: #c4b5fd;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
   cursor: pointer;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .shuffle-btn:hover {
-  background-color: #3a3f4b;
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
